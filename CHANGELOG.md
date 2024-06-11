@@ -37,6 +37,10 @@ Given a version number `MAJOR.MINOR.PATCH`, we increment the:
 - Add `--ignore-change` flag to `terramate experimental trigger`, which makes the change detection ignore the given stacks.
   - It inverts the default trigger behavior.
 - Add `--recursive` flag to `terramate experimental trigger` for triggering all child stacks of given path.
+- Add cloud filters `--deployment-status=<status>` and `--drift-status` to commands below:
+  - `terramate list`
+  - `terramate run`
+  - `terramate experimental trigger`
 
 ### Fixed
 
